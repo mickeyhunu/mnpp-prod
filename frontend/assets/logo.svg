@@ -1,0 +1,8 @@
+<svg width="220" height="54" viewBox="0 0 220 54" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">NightWave</title><desc id="desc">초승달과 파동 모양의 NightWave 로고</desc>
+  <path d="M28.5 7.5c-9 2-15.5 10-15.5 19.5C13 38 22 47 33 47c7.3 0 13.7-3.9 17.2-9.8-2.2 1-4.6 1.5-7.2 1.5-9.7 0-17.5-7.8-17.5-17.5 0-5.3 2.3-10.1 6.1-13.3-1-.2-2-.4-3.1-.4Z" fill="url(#moon)"/>
+  <path d="M7 36c7-5.5 13-5.5 20 0s13 5.5 20 0 13-5.5 20 0" stroke="#A78BFA" stroke-width="3" stroke-linecap="round"/>
+  <text x="76" y="35" fill="#F8F7FF" font-family="Arial, sans-serif" font-size="25" font-weight="800" letter-spacing="-1">NIGHT</text>
+  <text x="151" y="35" fill="#A78BFA" font-family="Arial, sans-serif" font-size="25" font-weight="300" letter-spacing="-1">WAVE</text>
+  <defs><linearGradient id="moon" x1="13" y1="7" x2="48" y2="47" gradientUnits="userSpaceOnUse"><stop stop-color="#DDD6FE"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+</svg>
