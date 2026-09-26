@@ -76,6 +76,9 @@ $('#registerForm').addEventListener('submit', async (event) => {
 });
 
 $('#writeButton').addEventListener('click', () => state.user ? $('#writeModal').showModal() : openAuth('login'));
+$('#mobileWriteButton').addEventListener('click', () => $('#writeButton').click());
+$('#mobileSearchButton').addEventListener('click', () => { $('#boards').scrollIntoView(); setTimeout(() => $('#searchInput').focus(), 350); });
+$('#mobileProfileButton').addEventListener('click', () => state.user ? $('#myPageButton').click() : openAuth('login'));
 $('#writeForm').addEventListener('submit', async (event) => { event.preventDefault(); const values = Object.fromEntries(new FormData(event.currentTarget)); try { await api('/api/posts', { method: 'POST', body: JSON.stringify({ ...values, board: state.board }) }); event.currentTarget.reset(); $('#writeModal').close(); toast('새 이야기를 등록했어요.'); selectBoard(state.board); } catch (error) { $('.form-message', $('#writeModal')).textContent = error.message; } });
 $('#searchInput').addEventListener('input', (event) => renderPosts(state.posts.filter((post) => post.title.toLowerCase().includes(event.target.value.toLowerCase()))));
 $('#loadMore').addEventListener('click', () => toast('모든 최신 이야기를 확인했어요.'));
