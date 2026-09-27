@@ -8,7 +8,6 @@ Node.js와 MySQL로 구성한 밤문화 커뮤니티입니다. 하나의 Express
 backend/
   database/schema.sql   # MySQL 스키마 및 샘플 게시글
   src/                  # Express API, 인증, 접근 제어
-  test/                 # 권한 정책 단위 테스트
 frontend/
   assets/               # 로고
   css/                  # UI 스타일
