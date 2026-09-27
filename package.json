@@ -4,10 +4,8 @@
   "private": true,
   "description": "NightWave nightlife community",
   "scripts": {
-    "start": "node scripts/start.js",
-    "start:backend": "node backend/src/server.js",
-    "start:frontend": "node frontend/server.js",
-    "dev": "node scripts/start.js --watch",
+    "start": "node backend/src/server.js",
+    "dev": "node --watch backend/src/server.js",
     "test": "node --test backend/test/*.test.js"
   },
   "dependencies": {
