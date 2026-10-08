@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const path = require('path');
 const authRoutes = require('./routes/auth');
+const advertisingRoutes = require('./routes/advertising');
 const postRoutes = require('./routes/posts');
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors());
 app.use(express.json({ limit: '100kb' }));
 app.use('/api/auth', authRoutes);
+app.use('/api/advertising', advertisingRoutes);
 app.use('/api/posts', postRoutes);
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 app.use('/api', (req, res) => res.status(404).json({ message: '존재하지 않는 API입니다.' }));
